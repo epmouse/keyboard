@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyxj.customerkeyboardlib.MyKeyBoardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_customer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E7EAF0"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keyBackground="@drawable/keyboard_selector_normal"
+    android:keyPreviewOffset="0dp"
+    android:keyTextColor="@android:color/transparent"
+    android:keyTextSize="24dp"
+    android:labelTextSize="18dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:shadowColor="#fff"
+    android:shadowRadius="0.0" />

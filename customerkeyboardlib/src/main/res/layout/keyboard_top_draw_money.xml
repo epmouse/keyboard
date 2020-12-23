@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gradient_ffffff_f6f8fb">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_borrow_all"
+            android:layout_width="170dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_keyboard_borrow_all_6dp"
+            android:gravity="center"
+            android:text="全部借出"
+            android:textColor="@color/color_0056FF" />
+    </RelativeLayout>
+</LinearLayout>

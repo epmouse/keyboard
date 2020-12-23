@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app主色调(品牌色)按钮、字体等,  由各自主工程中同名色值替换-->
+    <color name="color_0056FF">#0056FF</color>
+
+
+</resources>

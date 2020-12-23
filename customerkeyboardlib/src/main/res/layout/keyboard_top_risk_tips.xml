@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingTop="10dp"
+    android:background="#E7EAF0"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="中原消费金融安全键盘"
+        android:textSize="12dp"
+        android:textColor="#AAB5C6"
+        android:drawableLeft="@mipmap/zyxj_logo_grey"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+
+
+    <style name="BorrowKeyboardAnimation">
+        <item name="android:windowEnterAnimation">@anim/keyboard_in</item>
+        <item name="android:windowExitAnimation">@anim/keyboard_out</item>
+    </style>
+</resources>
