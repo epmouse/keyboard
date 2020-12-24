@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             false
         }
         keyboardManager = KeyboardManager.Builder(this)
-            .setKeyboardDialog(KeyboardPopWindow(this))//传入KeyboardPopWindow 软键盘为dialog形式，传入BaseKeyboardLayout，软键盘为view形式
+            .setKeyboardDialog(KeyboardManager.createDialogKeyboard(this))//createDialogKeyboard 软键盘为dialog形式，createViewKeyboard，软键盘为view形式
             .setKeyboardType(KeyboardType.LEFT_DOWN_HIDE_BIG_CONFIRM)
             .setClickEventStatus(true)//按键点击变色效果，颜色变深
             .setTopView(null)//传入一个view，它会显示到键盘顶部，随键盘一起显示。

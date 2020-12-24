@@ -3,12 +3,9 @@ package com.zyxj.keyboard
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.text.TextUtils
-import android.view.View
 import android.widget.EditText
 import com.zyxj.customerkeyboardlib.IKeyboardManager
 import com.zyxj.customerkeyboardlib.KeyboardManager
-import com.zyxj.customerkeyboardlib.KeyboardPopWindow
 import com.zyxj.customerkeyboardlib.KeyboardType
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -29,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             false
         }
         keyboardManager = KeyboardManager.Builder(this)
-            .setKeyboardDialog(KeyboardPopWindow(this))
+            .setKeyboardDialog(KeyboardManager.createDialogKeyboard(this))
             .setKeyboardType(KeyboardType.LEFT_DOWN_HIDE_BIG_CONFIRM)
             .setClickEventStatus(true)//按键点击变色效果，颜色变深
             .setTopView(null)//传入一个view，它会显示到键盘顶部，随键盘一起显示。
