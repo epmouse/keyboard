@@ -7,7 +7,7 @@ import android.util.TypedValue;
 /**
  * 单位转换工具
  */
-public class UnitTransform {
+class UnitTransform {
     public static int dp2px(Context context, float dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                 dp, context.getApplicationContext().getResources().getDisplayMetrics());

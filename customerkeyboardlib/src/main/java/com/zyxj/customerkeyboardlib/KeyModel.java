@@ -1,30 +1,30 @@
 package com.zyxj.customerkeyboardlib;
 
-public class KeyModel {
+class KeyModel {
 
-	private Integer code;
-	private String lable;
-	
-	public KeyModel(Integer code,String lable){
-		this.code = code;
-		this.lable = lable;
-	}
+    private Integer code;
+    private String lable;
 
-	public Integer getCode() {
-		return code;
-	}
+    public KeyModel(Integer code, String lable) {
+        this.code = code;
+        this.lable = lable;
+    }
 
-	public void setCode(Integer code) {
-		this.code = code;
-	}
+    public Integer getCode() {
+        return code;
+    }
 
-	public String getLable() {
-		return lable;
-	}
+    public void setCode(Integer code) {
+        this.code = code;
+    }
 
-	public void setLable(String lable) {
-		this.lable = lable;
-	}
-	
-	
+    public String getLable() {
+        return lable;
+    }
+
+    public void setLable(String lable) {
+        this.lable = lable;
+    }
+
+
 }

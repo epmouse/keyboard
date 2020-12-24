@@ -25,6 +25,15 @@ public class KeyboardManager implements IKeyboardManager {
     private boolean haveClickColor;
     private boolean isRandom;
 
+    public static IKeyboardDialog createDialogKeyboard(Activity activity) {
+        return new KeyboardPopWindow(activity);
+    }
+
+    public static IKeyboardDialog createViewKeyboard(Activity activity) {
+        return new BaseKeyboardLayout(activity);
+    }
+
+
     private KeyboardManager(Builder builder) {
         this.activity = builder.activity;
         keyboardOutsideTouchEventUtils = new KeyboardOutsideTouchEventUtils(activity, this);
@@ -92,7 +101,7 @@ public class KeyboardManager implements IKeyboardManager {
     }
 
     @Override
-    public KeyboardManager setCurrentEditText(EditText editText) {
+    public IKeyboardManager setCurrentEditText(EditText editText) {
         keyboardDialog.setCurrentEditText(editText);
         Utils.hideSystemSofeKeyboard(activity, editText);
         return this;
@@ -207,7 +216,7 @@ public class KeyboardManager implements IKeyboardManager {
             return this;
         }
 
-        public KeyboardManager build() {
+        public IKeyboardManager build() {
             if (keyboardDialog == null) {
                 keyboardDialog = new KeyboardPopWindow(activity);
             }

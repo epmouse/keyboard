@@ -15,7 +15,7 @@ import android.util.AttributeSet;
 import java.lang.reflect.Field;
 import java.util.List;
 
-public class MyKeyBoardView extends KeyboardView {
+class MyKeyBoardView extends KeyboardView {
     private Context mContext;
     private Keyboard mKeyBoard;
     private Paint confirmBtnTextPaint = new Paint();

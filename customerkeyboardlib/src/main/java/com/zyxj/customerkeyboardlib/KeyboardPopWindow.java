@@ -9,7 +9,7 @@ import android.widget.PopupWindow;
 public class KeyboardPopWindow extends BaseKeyboardLayout implements IKeyboardDialog {
     private PopupWindow popupWindow;
 
-    public KeyboardPopWindow(Activity activity) {
+    KeyboardPopWindow(Activity activity) {
         super(activity, null);
     }
 
@@ -17,7 +17,7 @@ public class KeyboardPopWindow extends BaseKeyboardLayout implements IKeyboardDi
      * @param activity
      * @param rootView popUpWindow.showAtLocation(View parent, int gravity, int x, int y) 中的parent
      */
-    public KeyboardPopWindow(Activity activity, ViewGroup rootView) {
+    KeyboardPopWindow(Activity activity, ViewGroup rootView) {
         super(activity, rootView);
     }
 

@@ -27,7 +27,7 @@ public class BaseKeyboardLayout implements IKeyboardDialog {
     private boolean isRandom;
     private ViewGroup rootView;
 
-    public BaseKeyboardLayout(@NonNull Activity activity) {
+    BaseKeyboardLayout(@NonNull Activity activity) {
         this(activity, null);
     }
 
@@ -35,7 +35,7 @@ public class BaseKeyboardLayout implements IKeyboardDialog {
      * @param activity
      * @param rootView 传入键盘要依附的跟布局，适配非Activity页面，比如在dialog中弹出
      */
-    public BaseKeyboardLayout(@NonNull Activity activity, ViewGroup rootView) {
+    BaseKeyboardLayout(@NonNull Activity activity, ViewGroup rootView) {
         this.activity = activity;
         this.rootView = rootView;
         initView();
